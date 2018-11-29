@@ -1,0 +1,247 @@
+.header-main{
+    font-family: "Trebuchet MS";
+    background : url('./images/header.gif') left top repeat-x #fff;
+    z-index: 2;
+    height: 100px;
+    box-shadow: 0 5px 15px -5px #000;
+}
+
+
+.header-content{
+    margin-left: auto;
+    margin-right: auto;
+    width: 960px; 
+    height: 100px;   
+}
+
+.header-content h1{
+    padding: 15px 0 0 0;
+}
+
+.header-content h1 span:nth-child(1){
+    color: #ff9601;
+}
+
+.header-content h1 span:nth-child(2){
+    color: #949494;
+    font-size: 28px;
+    letter-spacing: -1px;
+    vertical-align: center;
+}
+
+.site-logo{
+    display: inline-block;
+    font-size: 60px;
+    line-height: 1.2em;
+    color: #262626;
+    letter-spacing: -3px;
+}
+
+.site-logo a{
+    text-decoration: none!important;
+    color: #262626;
+}
+
+.site-logo a:hover{
+    color: #262626;
+}
+
+.left-content{
+    display: inline-block;
+    float: left;
+}
+
+.right-content{
+    float: right;
+    display: inline-block;
+    margin: 35px 0;
+}
+
+
+.right-content input{
+    outline: none;
+    box-sizing: border-box!important;
+    width: 200px;
+    padding: 2px 25px 2px 10px;
+    background: url('images/search-icon.gif') no-repeat 98% 50%;
+    border: 1px solid #ccc;
+    z-index: -10;
+}
+
+.menu-overlay {
+    background: rgba(0,0,0,0.5);
+    position: fixed;
+    top: 60px;
+    left: 275px;
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+}
+
+.menu-overlay-show{
+    display: block;
+}
+
+
+.menu-overlay-hide{
+    display: none;
+}
+
+.menu-bar{
+    display: none;
+    position: absolute;
+    top: 15px;
+    right: 5%;
+}
+
+.fa-bars{
+    font-size: 32px;
+    color: #ff9601;
+}
+
+.fa-times{
+    font-size: 32px;
+    color: #ff9601;
+}
+
+@media screen and (max-width: 1200px){
+    .header-main{
+        height: 80px!important;
+    }
+    .header-content{
+        margin-left: auto;
+        margin-right: auto;
+        width: 810px;
+        height: 80px!important;    
+    }
+
+    .header-content h1{
+        padding: 5px 0 0 0;
+    }
+
+    
+    .header-content h1 span:nth-child(2){
+        font-size: 24px;
+    }
+
+    .site-logo{        
+        font-size: 50px;
+        line-height: 1.4em;
+    }
+
+    .right-content{
+        margin: 25px 0;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .header-main{
+        height: 60px!important;
+    }
+
+    .header-content{
+        height: 60px!important;
+        width: 685px;    
+    }    
+
+    .header-content h1{
+        padding: 0;
+    }
+
+    
+    .header-content h1 span:nth-child(2){
+        font-size: 20px;
+    }
+
+    .site-logo{        
+        font-size: 42px;
+        line-height: auto;
+    }
+
+    .right-content{
+        margin: 15px 0;
+    }   
+
+}
+
+@media screen and (max-width: 768px) {
+    .header-main .container{
+        margin: 0 5%;
+    }
+
+    .right-content{
+        margin-right: 18%;
+    }
+    
+    
+    .right-content input{
+        outline: none;
+        box-sizing: border-box!important;
+        width: 200px;
+        padding: 2px 25px 2px 10px;
+        background: url('images/search-icon.gif') no-repeat 98% 50%;
+        border: 1px solid #ccc;
+        z-index: -10;
+    }
+    
+    .menu-bar{
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 5%;
+    }
+
+    .fa-bars{
+        font-size: 32px;
+        color: #ff9601;
+    }
+    
+    .fa-times{
+        font-size: 32px;
+        color: #ff9601;
+    }
+    
+    
+}
+
+@media screen and (max-width: 575px){   
+    .header-content{
+        margin-left:5%;
+    }
+    .header-main .container{
+        margin: 0;
+    }
+
+    .site-logo{
+        font-size: 32px;
+        line-height: 1.9em;
+    }
+
+    .right-content{
+        margin-left: 5%;
+        margin-right: 20%;
+    }
+    
+    .right-content input{
+        width: 150px;
+    }
+
+    .menu-bar{
+        position: absolute;
+        top: 15px;
+        right: 5%;
+    }
+
+}
+
+
+@media screen and (max-width: 480px){   
+    .right-content{
+        margin-left: 5%;
+        margin-right: 17.5%;
+    }
+    
+    .right-content input{
+        width: 60px;
+    }
+}

@@ -1,0 +1,139 @@
+.Footer{
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+.footer-row-1{
+    background: url('./images/bg-bot-tail.gif') center top repeat-x #fff;
+    height: auto;
+    padding: 20px 0;
+}
+
+.footer-about-content {
+    margin: 0px auto;
+    padding: 10px 0;
+}
+
+.footer-about-content h2{
+    margin: 15px auto 5px auto;
+    font-size: 36px;
+    letter-spacing: -2px;
+}
+
+.footer-about-content p{
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.footer-about-content a{
+    color: #ff9601;
+    text-decoration: underline;
+}
+
+.footer-about-content a:hover{
+    color: #ff9601;
+    text-decoration: none;
+}
+
+.date {
+    text-decoration: none!important;
+}
+
+.name{
+    margin-bottom: 0;
+}
+
+.fa-quote-left{
+    color: #ff9601;
+    font-size: 18px;
+}
+
+.footer-row-2{
+    background: url('./images/footer-tail.gif') center top repeat-x #fff;
+    height: auto;
+    padding: 30px 0 20px 0;    
+}
+
+.footer-contact-content {
+    margin: 0px auto;
+    
+}
+
+.footer-contact-content p{
+    font-weight: normal;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.footer-contact-content a{
+    color: #ff9601;
+    text-decoration: underline;
+}
+
+.footer-contact-content a:hover{
+    color: #ff9601;
+    text-decoration: none;
+}
+.footer-contact-content h2{
+    font-size: 40px;
+}
+
+.footer-contact-content h2 span{
+    font-size: 30px;
+    color: #666;
+}
+
+
+@media screen and (max-width: 992px){
+    .footer-contact-content h2{
+        font-size: 24px;
+    }
+
+    .footer-contact-content h2 span{
+        font-size: 24px;
+    }    
+
+    .footer-contact-content img{
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .Footer{
+        text-align: center;
+    }
+    .footer-row-1{
+        padding: 10px 0;
+    }
+    .footer-about-content h2{
+        font-size: 28px;
+    }
+    .footer-about-content p{
+        font-size: 16px;
+    }
+
+    .fa-quote-left{
+        font-size: 16px;
+    }
+    
+    .footer-row-2{
+        padding: 15px 0 20px 0;    
+    }
+
+    .footer-contact-content p{
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    
+    .footer-contact-content h2{
+        font-size: 24px;
+    }
+    
+    .footer-contact-content h2 span{
+        font-size: 24px;
+    }
+
+    .footer-contact-content img{
+        margin-top: 10px;
+    }
+    
+}

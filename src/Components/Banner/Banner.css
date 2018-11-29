@@ -1,0 +1,302 @@
+.Banner {
+    background: url('./images/bg-top.jpg') center top;
+    height: auto;
+    background-size: cover;
+    overflow-x: hidden;
+}
+.banner-content{
+    padding: 40px 0px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 980px;
+    height: auto;
+}
+.banner-image-gallery{
+    background: #fff;
+    padding: 20px 8px 20px 20px;
+}
+
+.right-banner-image-gallery img{
+    padding: 0 22px 20px 0;
+    position: relative;
+}
+
+.gallery-img{
+    cursor: pointer;
+}
+
+.img-overlay-set{
+    background: rgba(0,0,0,0.5);
+    width: 140px;
+    height: 120px;
+    z-index: 200;
+    position: absolute;
+    transition: 0.4s;
+}
+
+.img-overlay-set:hover{
+    background: none;
+}
+
+.img-overlay-unset{
+    background: none;
+}
+
+.banner-quote h2{
+    color: #ff9601;
+    font-size: 48px;
+    margin: 0 10px;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    letter-spacing: -3px;
+    padding: 5px 25px 0 0;
+}
+
+.banner-quote p{
+    margin: 0 10px;
+    font-size: 14px;
+}
+
+.banner-quote p a{
+    color: #ff9601;
+    text-decoration: underline;
+}
+
+.banner-quote p a:hover{
+    text-decoration: none;
+}
+
+.service-content {
+    padding: 20px 10px 0 10px;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+.service-content h2{
+    font-size: 36px;
+    color: #fff;
+    margin: 0 10px 15px 10px;
+    font-weight: normal;
+    letter-spacing: -2px;
+}
+
+.service-content img{
+    background: #fff;
+    padding: 10px;
+    display: inline;
+}
+
+.service-content img{
+    float: left;
+}
+
+.service-content ul{
+    overflow: hidden;
+}
+
+.service-content ul li{
+    color: #ff9601;
+    background: url(./images/marker.png) no-repeat 0 16px;
+    font-size: 20px;
+    list-style: none;
+    display: inline-block;
+    letter-spacing: -1px;
+    padding: 2px 15px;
+}
+
+@media screen and (max-width: 1200px){
+    .banner-content{
+        width: 100%;
+    }
+    .left-banner-image-gallery img{
+        width: 100%;
+    }
+    .right-banner-image-gallery{
+        margin-left: 5px;
+    }
+    
+    .right-banner-image-gallery img{
+        padding: 0 22px 20px 0;        
+        position: relative;
+        width: 150px;
+        height: 135px;
+    }
+    
+    .img-overlay-set{
+        width: 128px;
+        height: 115px;
+        z-index: 200;
+    }
+    .service-content ul{
+        padding-left: 20px;
+    }   
+}
+
+@media screen and (max-width: 992px){
+    .Banner{
+        background: linear-gradient(
+        rgba(0,0,0,0.3),
+        rgba(0,0,0,0.5)
+        ),
+    url('./images/bg-top.jpg') center top;
+    }
+
+    .banner-image-gallery{
+        padding: 20px;
+    }
+    .right-banner-image-gallery{
+        margin: 20px 4%;
+    }
+    .right-banner-image-gallery img{
+        width: 300px;
+        height: 200px;
+        padding: 0;
+        margin: 10px 7px 5px 7px;
+    }
+    .img-overlay-set{
+        width: 300px;
+        height: 200px;
+        margin: 10px 0 0 7px;
+    }
+
+    .banner-quote h2{
+        font-size: 42px;
+        text-align: center;
+        padding: 0;
+    }
+    
+    .banner-quote p{
+        margin: 10px;
+        font-size: 16px;
+        text-align: center;
+    }
+    .service-content {
+        text-align: center!important;
+    }
+    
+    .service-content h2{
+        font-size: 32px;
+        padding: 20px 5px;
+    }
+    
+    .service-content img{
+        width: 50%;
+        margin: 10px;
+    }
+    
+    
+    .service-content ul{
+        margin-top: 25px;
+        text-align: left;
+    }
+    
+    .service-content ul li{
+        font-size: 22px;
+    }
+
+}
+
+@media screen and (max-width: 768px){
+    .Banner .container{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .banner-image-gallery{
+        padding: 15px;
+    }
+    .right-banner-image-gallery{
+        margin: 9px;
+    }
+    .right-banner-image-gallery img{
+        width: auto;
+        padding: 0;
+        margin: 10px 7.5px 5px 7px;
+    }
+    .img-overlay-set{
+        width: 230px;
+        margin-left:9px;
+    }
+    
+    .banner-quote p{
+        font-size: 18px;
+    }
+    
+    .service-content h2{        
+        padding: 10px 5px;
+    }
+    
+    .service-content img{
+        width: auto;
+    }
+    
+    
+    .service-content ul{
+        width: auto;
+    }
+    
+    .service-content ul li{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 575px){
+    .right-banner-image-gallery{
+        margin: 0 auto;
+        width: 400px;
+        
+    }
+    .right-banner-image-gallery img{
+        width: 200px;
+        height: 120px;
+        padding: 0;
+    }
+    .img-overlay-set{
+        width: 200px;
+        margin-left: 8px;
+        height: 120px;
+    }
+    .banner-quote h2{
+        margin: 15px 10px 0px 10px;
+    }
+
+    .service-content img{
+        width: 100%;
+        margin: auto;
+    }
+
+    .service-content ul{
+        text-align: center;
+    }
+    
+    .service-content ul li{
+        background-position: 0px 10px;
+        display: block;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 475px){
+    .right-banner-image-gallery{
+        margin: 0 auto;
+        width: 300px;
+        
+    }
+    .right-banner-image-gallery img{
+        width: 150px;        
+    }
+    .img-overlay-set{
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 375px){
+    .right-banner-image-gallery{
+        margin: 0 auto;
+        width: 260px;
+    }
+    .right-banner-image-gallery img{
+        width: 130px;        
+    }
+    .img-overlay-set{
+        width: 130px;
+    }
+}

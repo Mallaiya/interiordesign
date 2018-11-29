@@ -1,0 +1,102 @@
+.nav-navbar{
+    background: #f0f0f0;
+    border-bottom: 1px solid #ccc;
+}
+
+.navbar-list{
+    display: inline-block;
+    list-style: none;    
+    border-left: 1px solid #ccc;
+    letter-spacing: -1px;
+}
+.navbar-list:last-of-type{
+    border-right: 1px solid #ccc;
+}
+
+.navbar-list:hover{
+    background: #262626;
+}
+
+.navbar-orderlist{
+    padding: 0;
+    margin-bottom: 0;
+
+}
+
+.navbar-list-item{
+    text-decoration: none!important;
+    font-family: "Trebuchet MS";
+    display: block;
+    width: 190px;
+    font-size: 21px;
+    padding: 18px 0;
+    color: #262626;
+    text-align: center; 
+}
+
+.navbar-list-item:hover{
+    color: #fff;
+}
+
+.navbar-list-active a{
+    background: #262626;
+    color: #fff;
+}
+
+
+@media screen and (max-width: 1200px){
+    .navbar-list-item{
+        width: 160px;
+        font-size: 20px;
+        padding: 15px 0;
+    }    
+}
+
+@media screen and (max-width: 992px){
+    .navbar-list-item{
+        width: 135px;
+        font-size: 20px;
+        padding: 10px 0;
+    }   
+}
+
+@media screen and (max-width: 768px){
+    .nav-navbar{
+        border-bottom: none;
+        width: 275px;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+    }
+
+    .navbar-show {
+        display: block;
+    }
+
+    .navbar-hide {
+        display: none;
+    }
+
+    
+    .nav-navbar .container{
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .navbar-list{
+        display:block;
+        border-left: none;
+        letter-spacing: -1px;
+    }
+    .navbar-list:last-of-type{
+        border-right: none;
+    }
+    
+    .navbar-list-item{
+        width: 100%;
+        font-size: 18px;
+    }
+            
+}
